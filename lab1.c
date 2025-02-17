@@ -19,7 +19,7 @@ int recordCount = 0;
 int changeCount = 0;
 char databaseName[50];
 
-// Function prototypes
+// Functions
 void printAllRecords();
 void addRecord();
 void deleteLastRecord();
@@ -34,7 +34,7 @@ int main(int argc, char *argv[]) {
     }
 
     strncpy(databaseName, argv[1], sizeof(databaseName) - 1);
-    databaseName[sizeof(databaseName) - 1] = '\0'; // Ensure null termination
+    databaseName[sizeof(databaseName) - 1] = '\0'; 
 
     int choice;
     do {
